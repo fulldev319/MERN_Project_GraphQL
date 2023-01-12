@@ -80,7 +80,7 @@ const RootQuery = new GraphQLObjectType({
 });
 
 // Mutations
-const mutation = new GraphQLObjectType({
+const RootMutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
     // Add a client
@@ -188,5 +188,5 @@ const mutation = new GraphQLObjectType({
 
 module.exports = new GraphQLSchema({
   query: RootQuery,
-  mutation,
+  mutation: RootMutation,
 });
